@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://voyager.moritzvollmer.de/sitemap.xml

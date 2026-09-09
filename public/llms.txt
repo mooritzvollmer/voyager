@@ -1,0 +1,26 @@
+# Voyager 1 Data Visualization · Moritz Vollmer
+
+> A small German-language web visualization by Moritz Vollmer showing Voyager 1's modeled distance from Earth, signal travel time, mission duration, and direction of travel.
+
+## Canonical Page
+
+- https://voyager.moritzvollmer.de/
+
+## Method
+
+The displayed Earth distance is linearly extrapolated from a NASA/JPL Horizons reference for 29 August 2026 at 12:00 UTC using the reference range rate. Signal travel times are calculated with the speed of light. The figures are an educational model, not live spacecraft telemetry, and small deviations from current ephemeris values are possible.
+
+## Mission Context
+
+Voyager 1 launched on 5 September 1977, entered interstellar space in 2012, and is traveling in the general direction of the constellation Ophiuchus.
+
+## Sources
+
+- NASA/JPL Horizons: https://ssd.jpl.nasa.gov/horizons/
+- NASA/JPL Voyager 1 mission: https://www.jpl.nasa.gov/missions/voyager-1/
+- NASA Voyager FAQ: https://science.nasa.gov/mission/voyager/frequently-asked-questions/
+
+## Author
+
+- Moritz Vollmer: https://moritzvollmer.de/
+- More projects: https://moritzvollmer.de/projekte/

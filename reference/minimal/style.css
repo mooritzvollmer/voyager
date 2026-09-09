@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #eeede6;
+  background: #0b0d0d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #eeede6;
+  --muted: #8e948f;
+  --line: #292d2b;
+  --signal: #bfd8c5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 50% 36%, rgba(77, 105, 85, .14), transparent 29rem), #0b0d0d; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+
+.voyager-page { display: grid; min-height: 100svh; place-items: center; padding: 40px 24px; }
+.voyager-card { width: min(680px, 100%); text-align: center; }
+.eyebrow { margin: 0 0 12px; color: var(--signal); font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 400; letter-spacing: -.02em; }
+
+.voyager-visual { width: 80px; height: 80px; margin: 42px auto 28px; color: var(--ink); }
+.voyager-visual svg { display: block; width: 80px; height: 80px; overflow: visible; }
+.probe { stroke-width: 1.7; }
+.motion-lines { color: var(--signal); stroke-width: 1.5; }
+.motion-lines path { animation: speed-line 1.35s cubic-bezier(.4, 0, .2, 1) infinite; }
+.motion-lines path:nth-child(2) { animation-delay: -.48s; }
+.motion-lines path:nth-child(3) { animation-delay: -.87s; }
+
+.distance { display: grid; justify-items: center; }
+.distance__value { font-family: 'DM Mono', monospace; font-size: clamp(2rem, 7.5vw, 4.5rem); font-weight: 500; letter-spacing: -.065em; line-height: .98; white-space: nowrap; }
+.distance__unit { margin-top: 12px; color: var(--muted); font-size: .88rem; }
+.distance__secondary { margin-top: 6px; color: var(--signal); font-family: 'DM Mono', monospace; font-size: .72rem; }
+
+.facts { display: grid; grid-template-columns: 1fr 1fr; margin: 44px 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: left; }
+.facts > div { min-height: 104px; padding: 22px 24px; }
+.facts > div + div { border-left: 1px solid var(--line); }
+.facts dt { margin-bottom: 8px; color: var(--muted); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
+.facts dd { margin: 0; font-family: 'DM Mono', monospace; font-size: .94rem; }
+.facts span { display: block; margin-top: 5px; color: var(--muted); font-size: .72rem; }
+
+.source-note { margin: 16px 0 0; color: #626763; font-size: .66rem; }
+.source-note a { text-decoration-color: #404642; text-underline-offset: 3px; }
+.source-note a:hover { color: var(--signal); }
+
+@keyframes speed-line {
+  0% { opacity: 0; transform: translateY(-9px); }
+  28% { opacity: .9; }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+@media (max-width: 560px) {
+  .voyager-page { padding: 32px 18px; }
+  .voyager-visual { margin-top: 34px; }
+  .distance__value { font-size: clamp(1.75rem, 8.6vw, 3rem); }
+  .facts { grid-template-columns: 1fr; }
+  .facts > div { min-height: 0; padding: 18px 6px; }
+  .facts > div + div { border-top: 1px solid var(--line); border-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-lines path { animation: none; opacity: .65; }
+}
