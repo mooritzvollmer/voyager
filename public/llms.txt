@@ -23,4 +23,3 @@ Voyager 1 launched on 5 September 1977, entered interstellar space in 2012, and 
 ## Author
 
 - Moritz Vollmer: https://moritzvollmer.de/
-- More projects: https://moritzvollmer.de/projekte/

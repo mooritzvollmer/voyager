@@ -138,7 +138,6 @@ onBeforeUnmount(() => window.clearInterval(clock))
         </a>
         <nav class="project-footer__links" aria-label="Footer-Navigation">
           <a href="https://moritzvollmer.de/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-          <a href="https://moritzvollmer.de/projekte/" target="_blank" rel="noopener noreferrer">Weitere Projekte</a>
           <a href="https://moritzvollmer.de/impressum/" target="_blank" rel="noopener noreferrer">Impressum</a>
           <a href="https://moritzvollmer.de/datenschutz/" target="_blank" rel="noopener noreferrer">Datenschutz</a>
         </nav>
