@@ -114,3 +114,5 @@ h1 { margin: 0; font-size: 1.15rem; font-weight: 500; letter-spacing: .02em; tex
   .stars--near, .motion-lines path, .radio-waves, .orbit, .scan-line, .signal i { animation: none; }
   .motion-lines path, .radio-waves { opacity: .6; }
 }
+
+.project-footer__mark{flex:0 0 42px;width:42px;height:42px;padding:0;border:0;color:var(--signal)}
